@@ -1,9 +1,9 @@
 const router = require('express').Router()
-const Animal = require('../models/Person')
+const Animal = require('../models/Animais')
 
 
 //rota da API
-
+ 
 //Cria
 router.post('/', async (req,res) => {
     const {name,raca,idade} = req.body

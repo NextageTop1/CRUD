@@ -1,10 +1,9 @@
 const mongoose = require('mongoose')
 
-const Animal = mongoose.model('Animal',{
-    name: String,
-    raca: String,
-    idade: Number,
+const Pessoa = mongoose.model('Person',{
+    name : String,
+    idade : Number,
 
 })
 
-module.exports = Animal
+module.exports =  Pessoa

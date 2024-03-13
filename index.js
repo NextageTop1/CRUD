@@ -18,10 +18,15 @@ app.get("/",  (req,res) =>{
 })
 
 //rota da API
+// Animais
 const animalroutes = require('./routes/animalroutes')
 app.use('/animal', animalroutes)
 
-mongoose.connect(`mongodb+srv://Nextage:${db_password}@api.bniibxm.mongodb.net/`)
+//Pessoas
+const personroutes = require('./routes/personroutes')
+app.use('/person', personroutes)
+
+mongoose.connect(`mongodb+srv://Nextage:0X7SK6T2L6cLzF7S@api.bniibxm.mongodb.net/`)
 .then( () => {
     console.log("Conectadu") 
     app.listen(3000)
